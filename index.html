@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-    <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"></script>
+    <script src="./maps/fusioncharts.js"></script>
+    <script src="./maps/fusioncharts.maps.js"></script>
     <script src="https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.africa.js"></script>
     <script src="https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.uganda.js"></script>
     <script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
@@ -16,16 +16,31 @@
     <div id="chart-container"></div>
     <script>
 
-        // var entities = data.entities;
-        // const district = Object.entries(entities);
-        // var districtsWhereClientsAre = [];
+items = [];
+        var entities = data.entities;
+        const district = Object.entries(entities);
+        var districtsWhereClientsAre = [];
 
-        // for (var i = 0; i<=district.length; i++) {
-        //     //for (var x = 0; x<ditWhereClientsAre.length; x++) {
-        //     const dist = district[i];
-        //         console.log(dist[1]);
-        //     //}
-        // }
+        for (var i = 0; i < district.length; i++) {
+            const dist = Object.entries(district[i][1]);
+          
+            for (var x = 0; x < ditWhereClientsAre.length; x++) {
+                if(ditWhereClientsAre[x]==dist[1][1])
+                {
+                    console.log(dist);
+                const distDetails = Object.entries(dist[1])
+                    console.log("name "+dist[1][1]+" position "+dist[3][1]);
+                    var distObj ={};
+                      distObj.label = dist[1][1];
+                      let pos = dist[3][1];
+                      //console.log(pos);
+                      //const myArray = pos.split(',');
+                      distObj.x = pos[0];
+                      distObj.y = pos[1];
+                      console.log(distObj);
+                }
+            }
+        }
 
         // function myFunction(item, index) {
         //     text += index + ": " + item + "<br>";
@@ -385,14 +400,14 @@
                                 "y": "282.2",
                                 "label": "Masindi",
                                 "labelpos": "left"
-                            },{
+                            }, {
                                 "id": "SE",
                                 "shapeid": "newCustomShape",
                                 "x": "194.8",
                                 "y": "455.8",
                                 "label": "Sembabule",
                                 "labelpos": "left"
-                            },{
+                            }, {
                                 "id": "BN",
                                 "shapeid": "newCustomShape",
                                 "x": "58.6",
@@ -539,77 +554,77 @@
                                 "y": "538.2",
                                 "label": "Rukungiri",
                                 "labelpos": "right"
-                            },{
+                            }, {
                                 "id": "WA",
                                 "shapeid": "newCustomShape",
                                 "x": "318.8",
                                 "y": "435",
                                 "label": "Wakiso",
                                 "labelpos": "right"
-                            },{
+                            }, {
                                 "id": "NT",
                                 "shapeid": "newCustomShape",
                                 "x": "83.2",
                                 "y": "563.2",
                                 "label": "Ntungamo",
                                 "labelpos": "right"
-                            },{
+                            }, {
                                 "id": "SR",
                                 "shapeid": "newCustomShape",
                                 "x": "437.3",
                                 "y": "268.5",
                                 "label": "Soroti",
                                 "labelpos": "right"
-                            },{
+                            }, {
                                 "id": "KJ",
                                 "shapeid": "newCustomShape",
                                 "x": "125.8",
                                 "y": "394.3",
                                 "label": "Soroti",
                                 "labelpos": "right"
-                            },{
+                            }, {
                                 "id": "SR",
                                 "shapeid": "newCustomShape",
                                 "x": "437.3",
                                 "y": "268.5",
                                 "label": "Soroti",
                                 "labelpos": "right"
-                            },{
+                            }, {
                                 "id": "KR",
                                 "shapeid": "newCustomShape",
                                 "x": "15.3",
                                 "y": "591",
                                 "label": "Kisoro",
                                 "labelpos": "right"
-                            },{
+                            }, {
                                 "id": "MD",
                                 "shapeid": "newCustomShape",
                                 "x": "214.2",
                                 "y": "404.3",
                                 "label": "Mubende",
                                 "labelpos": "right"
-                            },{
+                            }, {
                                 "id": "MN",
                                 "shapeid": "newCustomShape",
                                 "x": "357",
                                 "y": "413.6",
                                 "label": "Mukono",
                                 "labelpos": "right"
-                            },{
+                            }, {
                                 "id": "BT",
                                 "shapeid": "newCustomShape",
                                 "x": "257.9",
                                 "y": "453.8",
                                 "label": "Butambala",
                                 "labelpos": "right"
-                            },{
+                            }, {
                                 "id": "86",
                                 "shapeid": "newCustomShape",
                                 "x": "125.8",
                                 "y": "394.3",
                                 "label": "Kyenjojo",
                                 "labelpos": "right"
-                            },{
+                            }, {
                                 "id": "NA",
                                 "shapeid": "newCustomShape",
                                 "x": "308.5",
