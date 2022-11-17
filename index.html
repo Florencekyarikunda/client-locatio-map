@@ -16,16 +16,30 @@
     <div id="chart-container"></div>
     <script>
 
- (function(){
-   
-    var entities = data.entities;
-    const district = Object.entries(entities);
-    
-    console.log(district);
+        // var entities = data.entities;
+        // const district = Object.entries(entities);
+        // var districtsWhereClientsAre = [];
 
-})();
-//var json = require("main.json");
-//console.log(json);
+        // for (var i = 0; i<=district.length; i++) {
+        //     //for (var x = 0; x<ditWhereClientsAre.length; x++) {
+        //     const dist = district[i];
+        //         console.log(dist[1]);
+        //     //}
+        // }
+
+        // function myFunction(item, index) {
+        //     text += index + ": " + item + "<br>";
+        // }
+
+        /* (function () {
+             var entities = data.entities;
+             const district = Object.entries(entities);
+             console.log(district);
+ 
+         })();
+         */
+        //var json = require("main.json");
+        //console.log(json);
 
 
         FusionCharts.ready(function () {
@@ -365,53 +379,245 @@
                                 "labelpos": "right"
                             },
                             {
-                                "id": "07",
+                                "id": "MC",
                                 "shapeid": "newCustomShape",
-                                "x": "585.73",
-                                "y": "317.49",
-                                "label": "Lira",
+                                "x": "236",
+                                "y": "282.2",
+                                "label": "Masindi",
+                                "labelpos": "left"
+                            },{
+                                "id": "SE",
+                                "shapeid": "newCustomShape",
+                                "x": "194.8",
+                                "y": "455.8",
+                                "label": "Sembabule",
+                                "labelpos": "left"
+                            },{
+                                "id": "BN",
+                                "shapeid": "newCustomShape",
+                                "x": "58.6",
+                                "y": "382.9",
+                                "label": "Bundibugyo",
                                 "labelpos": "left"
                             },
                             {
-                                "id": "08",
+                                "id": "BS",
                                 "shapeid": "newCustomShape",
-                                "x": "824.47",
-                                "y": "277.03",
-                                "label": "Moroto",
-                                "labelpos": "left"
-                            },
-                            {
-                                "id": "09",
-                                "shapeid": "newCustomShape",
-                                "x": "591.8",
-                                "y": "419.67",
-                                "label": "Soroti",
+                                "x": "67.3",
+                                "y": "513.3",
+                                "label": "Bushenyi",
                                 "labelpos": "right"
                             },
                             {
-                                "id": "10",
+                                "id": "HO",
                                 "shapeid": "newCustomShape",
-                                "x": "717.24",
-                                "y": "499.59",
+                                "x": "161.7",
+                                "y": "305.6",
+                                "label": "Hoima",
+                                "labelpos": "right"
+                            },
+                            {
+                                "id": "UU",
+                                "shapeid": "newCustomShape",
+                                "x": "22.2",
+                                "y": "548.1",
+                                "label": "Kanungu",
+                                "labelpos": "right"
+                            },
+                            {
+                                "id": "KN",
+                                "shapeid": "newCustomShape",
+                                "x": "208.8",
+                                "y": "553",
+                                "label": "Kalangala",
+                                "labelpos": "right"
+                            },
+                            {
+                                "id": "KA",
+                                "shapeid": "newCustomShape",
+                                "x": "50",
+                                "y": "593.3",
+                                "label": "Kabale",
+                                "labelpos": "right"
+                            },
+                            {
+                                "id": "BH",
+                                "shapeid": "newCustomShape",
+                                "x": "89.6",
+                                "y": "497.8",
+                                "label": "Buhweju",
+                                "labelpos": "right"
+                            },
+                            {
+                                "id": "MA",
+                                "shapeid": "newCustomShape",
+                                "x": "243.7",
+                                "y": "506.9",
+                                "label": "Masaka",
+                                "labelpos": "right"
+                            }, {
+                                "id": "IB",
+                                "shapeid": "newCustomShape",
+                                "x": "109.2",
+                                "y": "466.8",
+                                "label": "Ibanda",
+                                "labelpos": "right"
+                            }, {
+                                "id": "TR",
+                                "shapeid": "newCustomShape",
+                                "x": "489.9",
+                                "y": "384",
+                                "label": "Tororo",
+                                "labelpos": "right"
+                            }, {
+                                "id": "RR",
+                                "shapeid": "newCustomShape",
+                                "x": "117.6",
+                                "y": "516.4",
+                                "label": "Mbarara",
+                                "labelpos": "right"
+                            }, {
+                                "id": "KM",
+                                "shapeid": "newCustomShape",
+                                "x": "333.5",
+                                "y": "419.8",
+                                "label": "Kampala",
+                                "labelpos": "right"
+                            }, {
+                                "id": "ME",
+                                "shapeid": "newCustomShape",
+                                "x": "503.6",
+                                "y": "350.3",
                                 "label": "Mbale",
                                 "labelpos": "right"
-                            },
-                            {
-                                "id": "11",
+                            }, {
+                                "id": "RR",
                                 "shapeid": "newCustomShape",
-                                "x": "572.58",
-                                "y": "576.47",
-                                "label": "Jinja",
+                                "x": "117.6",
+                                "y": "516.4",
+                                "label": "Mbarara",
                                 "labelpos": "right"
-                            },
-                            {
-                                "id": "12",
+                            }, {
+                                "id": "KS",
                                 "shapeid": "newCustomShape",
-                                "x": "501.76",
-                                "y": "573.44",
-                                "label": "Port Bell",
+                                "x": "51",
+                                "y": "450.2",
+                                "label": "Kasese",
+                                "labelpos": "right"
+                            }, {
+                                "id": "LY",
+                                "shapeid": "newCustomShape",
+                                "x": "179.2",
+                                "y": "492.3",
+                                "label": "Lyantonde",
+                                "labelpos": "right"
+                            }, {
+                                "id": "IN",
+                                "shapeid": "newCustomShape",
+                                "x": "435.5",
+                                "y": "390.1",
+                                "label": "Iganga",
+                                "labelpos": "right"
+                            }, {
+                                "id": "MT",
+                                "shapeid": "newCustomShape",
+                                "x": "548.4",
+                                "y": "162.3",
+                                "label": "Moroto",
+                                "labelpos": "right"
+                            }, {
+                                "id": "LA",
+                                "shapeid": "newCustomShape",
+                                "x": "367.6",
+                                "y": "223.2",
+                                "label": "Lira",
+                                "labelpos": "right"
+                            }, {
+                                "id": "RK",
+                                "shapeid": "newCustomShape",
+                                "x": "43.1",
+                                "y": "538.2",
+                                "label": "Rukungiri",
+                                "labelpos": "right"
+                            },{
+                                "id": "WA",
+                                "shapeid": "newCustomShape",
+                                "x": "318.8",
+                                "y": "435",
+                                "label": "Wakiso",
+                                "labelpos": "right"
+                            },{
+                                "id": "NT",
+                                "shapeid": "newCustomShape",
+                                "x": "83.2",
+                                "y": "563.2",
+                                "label": "Ntungamo",
+                                "labelpos": "right"
+                            },{
+                                "id": "SR",
+                                "shapeid": "newCustomShape",
+                                "x": "437.3",
+                                "y": "268.5",
+                                "label": "Soroti",
+                                "labelpos": "right"
+                            },{
+                                "id": "KJ",
+                                "shapeid": "newCustomShape",
+                                "x": "125.8",
+                                "y": "394.3",
+                                "label": "Soroti",
+                                "labelpos": "right"
+                            },{
+                                "id": "SR",
+                                "shapeid": "newCustomShape",
+                                "x": "437.3",
+                                "y": "268.5",
+                                "label": "Soroti",
+                                "labelpos": "right"
+                            },{
+                                "id": "KR",
+                                "shapeid": "newCustomShape",
+                                "x": "15.3",
+                                "y": "591",
+                                "label": "Kisoro",
+                                "labelpos": "right"
+                            },{
+                                "id": "MD",
+                                "shapeid": "newCustomShape",
+                                "x": "214.2",
+                                "y": "404.3",
+                                "label": "Mubende",
+                                "labelpos": "right"
+                            },{
+                                "id": "MN",
+                                "shapeid": "newCustomShape",
+                                "x": "357",
+                                "y": "413.6",
+                                "label": "Mukono",
+                                "labelpos": "right"
+                            },{
+                                "id": "BT",
+                                "shapeid": "newCustomShape",
+                                "x": "257.9",
+                                "y": "453.8",
+                                "label": "Butambala",
+                                "labelpos": "right"
+                            },{
+                                "id": "86",
+                                "shapeid": "newCustomShape",
+                                "x": "125.8",
+                                "y": "394.3",
+                                "label": "Kyenjojo",
+                                "labelpos": "right"
+                            },{
+                                "id": "NA",
+                                "shapeid": "newCustomShape",
+                                "x": "308.5",
+                                "y": "318.5",
+                                "label": "Nakasongola",
                                 "labelpos": "right"
                             }
+
                         ],
 
                     }
